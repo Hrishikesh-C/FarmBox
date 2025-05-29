@@ -1,0 +1,338 @@
+/* === Base Styles === */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f9f9f9;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+/* === Header === */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background: white;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.header nav a {
+  margin: 0 10px;
+  font-weight: 500;
+}
+
+/* === Hero Section === */
+.hero {
+  text-align: center;
+  background: #fdf6e3;
+  padding: 60px 20px;
+}
+
+.hero-title {
+  font-size: 2.8rem;
+  font-weight: bold;
+  color: #111;
+  margin-bottom: 10px;
+}
+
+.hero-subtitle {
+  font-size: 1.25rem;
+  color: #2d7a2d;
+  margin-bottom: 40px;
+}
+
+.hero-image-container {
+  position: relative;
+  display: inline-block;
+}
+
+.hero-image {
+  max-width: 100%;
+  border-radius: 8px;
+}
+
+.hero-button {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #345e44;
+  color: white;
+  border: none;
+  padding: 15px 30px;
+  border-radius: 40px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.hero-button:hover {
+  background-color: #2d4f3a;
+}
+
+/* === How It Works === */
+.how-it-works {
+  text-align: center;
+  padding: 40px 20px;
+  background: #f0fff0;
+}
+
+.steps {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 20px;
+}
+
+.steps div {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+/* === Nearby Gardens === */
+.gardens {
+  padding: 40px 20px;
+  background: #fff;
+  text-align: center;
+}
+
+.garden-list {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+
+.garden-card {
+  background: #f9f9f9;
+  padding: 20px;
+  width: 200px;
+  border-radius: 8px;
+}
+
+/* === Why Choose Us === */
+.why-choose-us {
+  text-align: center;
+  padding: 40px 20px;
+  background: #eaffea;
+}
+
+.reasons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.reasons div {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  width: 200px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+/* === Footer === */
+.footer {
+  text-align: center;
+  padding: 20px;
+  background: #222;
+  color: white;
+}
+
+/* === Shared Auth Styles === */
+.auth-page,
+.login-page {
+  background-color: #7fa68c;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+}
+
+.auth-container,
+.login-container {
+  background-color: #f9f6ec;
+  display: flex;
+  border-radius: 16px;
+  max-width: 950px;
+  width: 100%;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.auth-form,
+.login-form {
+  flex: 1;
+  padding: 40px 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.auth-brand,
+.login-brand {
+  font-size: 28px;
+  font-weight: 600;
+  color: #345e44;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.auth-brand span,
+.login-brand span {
+  color: #2d7a2d;
+}
+
+.auth-title,
+.login-title {
+  font-size: 22px;
+  font-weight: bold;
+  text-align: center;
+  margin: 20px 0;
+}
+
+.auth-form input,
+.login-form input[type="email"],
+.login-form input[type="password"] {
+  padding: 12px;
+  margin-bottom: 16px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  background-color: #f4f0eb;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.auth-check,
+.checkbox-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+  font-size: 0.95rem;
+}
+
+.auth-form button,
+.login-form button {
+  padding: 14px 0;
+  background-color: #f5e4b3;
+  border: none;
+  border-radius: 30px;
+  font-weight: bold;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 100%;
+}
+
+.auth-form button:hover,
+.login-form button:hover {
+  background-color: #eedba5;
+}
+
+.auth-footer,
+.login-links {
+  margin-top: 24px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.95rem;
+}
+
+.auth-footer a,
+.auth-footer span,
+.login-links a {
+  color: #2d7a2d;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+/* === Auth Info Side Panel === */
+.auth-info,
+.login-info {
+  background-color: #f3f0e4;
+  flex: 1;
+  padding: 40px 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.auth-info h3,
+.login-info h3 {
+  font-size: 20px;
+  color: #345e44;
+  margin-bottom: 20px;
+}
+
+.auth-info ul,
+.login-info ul {
+  list-style: none;
+  padding: 0;
+}
+
+.auth-info li,
+.login-info li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 1.05rem;
+  margin-bottom: 16px;
+  font-weight: 500;
+}
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Optional: Add spacing so other content doesn't get hidden under the fixed navbar */
+.hero, .why-choose-us, .how-it-works, .gardens {
+  margin-top: 80px; /* Adjust based on header height */
+}
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #2c3e50;
+}
+
+.header nav a {
+  margin-left: 1rem;
+  text-decoration: none;
+  color: #2c3e50;
+  font-weight: 500;
+}
+
+.header nav a:hover {
+  color: #27ae60;
+}
